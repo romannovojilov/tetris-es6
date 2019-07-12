@@ -1,1 +1,1 @@
-alert("tetris");
+import "normalize.css/normalize.css";

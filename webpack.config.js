@@ -17,6 +17,8 @@ let config = {
             {
                 test: /\.?css$/,
                 use: [{
+                    loader: 'style-loader'
+                },{
                     loader: 'css-loader'
                 }, {
                     loader: 'sass-loader'
@@ -33,7 +35,6 @@ let config = {
     },
     devServer: {
         contentBase: PATHS.dist,
-        compress: true,
         port: 8081,
         overlay: true,
         headers: {
